@@ -1,0 +1,1296 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Годовые тарифы клуба чип-тюнинга ETC Chip: фиксированные цены на прошивки, приоритет в работе, техподдержка 8–20 МСК. Тариф Мультимарочный и Грузовой для автосервисов, чиптюнеров и мастеров с постоянным потоком заказов." />
+  <title>Тарифы клуба ETC Chip — Фиксированные цены, приоритет, поддержка</title>
+  <style>
+    /* ============================
+       RESET & BASE
+    ============================ */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --accent:      #e8a100;
+      --accent-dark: #c48900;
+      --bg:          #0d0f14;
+      --bg2:         #13161e;
+      --bg3:         #1a1e28;
+      --border:      #252a38;
+      --text:        #e2e6f0;
+      --muted:       #8892a4;
+      --green:       #2db87a;
+      --red:         #e05252;
+      --radius:      10px;
+      --radius-lg:   16px;
+      --font:        'Segoe UI', system-ui, -apple-system, sans-serif;
+      --max-w:       1100px;
+      --section-gap: 80px;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: var(--font);
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.65;
+      font-size: 16px;
+    }
+
+    img { max-width: 100%; display: block; }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    .container {
+      max-width: var(--max-w);
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    section { padding: var(--section-gap) 0; }
+
+    /* ============================
+       TYPOGRAPHY
+    ============================ */
+    h1 { font-size: clamp(1.75rem, 4vw, 2.8rem); font-weight: 700; line-height: 1.2; }
+    h2 { font-size: clamp(1.4rem, 3vw, 2rem);   font-weight: 700; line-height: 1.25; margin-bottom: 12px; }
+    h3 { font-size: clamp(1rem, 2.5vw, 1.25rem); font-weight: 600; }
+
+    .section-label {
+      display: inline-block;
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--accent);
+      border: 1px solid var(--accent);
+      border-radius: 4px;
+      padding: 3px 10px;
+      margin-bottom: 16px;
+    }
+
+    .section-title { margin-bottom: 40px; }
+    .section-title p { color: var(--muted); margin-top: 10px; max-width: 640px; font-size: 1.05rem; }
+
+    /* ============================
+       BUTTONS
+    ============================ */
+    .btn {
+      display: inline-block;
+      padding: 14px 28px;
+      border-radius: var(--radius);
+      font-size: 0.95rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: opacity 0.18s, transform 0.18s;
+      border: none;
+      text-align: center;
+    }
+    .btn:hover { opacity: 0.88; transform: translateY(-1px); text-decoration: none; }
+    .btn-primary { background: var(--accent); color: #000; }
+    .btn-outline { background: transparent; color: var(--accent); border: 2px solid var(--accent); }
+    .btn-outline:hover { background: rgba(232,161,0,0.08); }
+    .btn-group { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; }
+
+    /* ============================
+       HEADER / NAV
+    ============================ */
+    header {
+      position: sticky; top: 0; z-index: 100;
+      background: rgba(13,15,20,0.92);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 14px 20px;
+      max-width: var(--max-w);
+      margin: 0 auto;
+    }
+
+    .nav-logo {
+      font-size: 1.1rem;
+      font-weight: 800;
+      letter-spacing: 0.04em;
+      color: var(--text);
+    }
+    .nav-logo span { color: var(--accent); }
+
+    .nav-links { display: flex; gap: 24px; }
+    .nav-links a { color: var(--muted); font-size: 0.9rem; transition: color 0.15s; }
+    .nav-links a:hover { color: var(--text); text-decoration: none; }
+
+    @media (max-width: 640px) { .nav-links { display: none; } }
+
+    /* ============================
+       HERO
+    ============================ */
+    #hero {
+      padding: 80px 0 70px;
+      background:
+        radial-gradient(ellipse 80% 60% at 60% 0%, rgba(232,161,0,0.07) 0%, transparent 65%),
+        var(--bg);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .hero-inner {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 60px;
+      align-items: center;
+    }
+
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(232,161,0,0.1);
+      border: 1px solid rgba(232,161,0,0.3);
+      border-radius: 20px;
+      padding: 5px 14px;
+      font-size: 0.82rem;
+      color: var(--accent);
+      font-weight: 600;
+      margin-bottom: 22px;
+    }
+
+    .hero-badge::before {
+      content: '';
+      width: 7px; height: 7px;
+      border-radius: 50%;
+      background: var(--accent);
+      animation: pulse 1.8s ease-in-out infinite;
+    }
+
+    @keyframes pulse {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.35; }
+    }
+
+    #hero h1 { margin-bottom: 20px; }
+    #hero h1 em { color: var(--accent); font-style: normal; }
+    .hero-sub { color: var(--muted); font-size: 1.05rem; margin-bottom: 34px; max-width: 480px; }
+
+    .hero-stats {
+      display: flex;
+      gap: 28px;
+      margin-top: 44px;
+      padding-top: 32px;
+      border-top: 1px solid var(--border);
+      flex-wrap: wrap;
+    }
+
+    .hero-stat-val { font-size: 1.5rem; font-weight: 700; color: var(--accent); }
+    .hero-stat-label { font-size: 0.8rem; color: var(--muted); margin-top: 2px; }
+
+    .hero-visual {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+
+    .hero-card {
+      background: var(--bg2);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 20px 24px;
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+
+    .hero-card-icon {
+      width: 44px; height: 44px;
+      border-radius: 10px;
+      background: rgba(232,161,0,0.1);
+      border: 1px solid rgba(232,161,0,0.2);
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1.3rem;
+      flex-shrink: 0;
+    }
+
+    .hero-card-text { font-size: 0.92rem; }
+    .hero-card-text strong { display: block; margin-bottom: 2px; }
+    .hero-card-text span { color: var(--muted); font-size: 0.84rem; }
+
+    @media (max-width: 840px) {
+      .hero-inner { grid-template-columns: 1fr; gap: 40px; }
+      .hero-visual { display: none; }
+    }
+
+    /* ============================
+       PROBLEMS
+    ============================ */
+    #problems { background: var(--bg2); border-top: 1px solid var(--border); }
+
+    .problems-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 16px;
+      margin-bottom: 48px;
+    }
+
+    .problem-card {
+      background: var(--bg3);
+      border: 1px solid var(--border);
+      border-left: 3px solid var(--red);
+      border-radius: var(--radius);
+      padding: 20px;
+    }
+
+    .problem-card h3 { color: var(--text); margin-bottom: 6px; font-size: 0.95rem; }
+    .problem-card p { color: var(--muted); font-size: 0.875rem; }
+
+    .problems-cta {
+      background: var(--bg3);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 28px 32px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .problems-cta p { color: var(--muted); max-width: 560px; font-size: 0.95rem; }
+    .problems-cta strong { display: block; font-size: 1.1rem; color: var(--text); margin-bottom: 6px; }
+
+    /* ============================
+       TARIFFS
+    ============================ */
+    #tariffs { background: var(--bg); }
+
+    .tariffs-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+    }
+
+    @media (max-width: 720px) { .tariffs-grid { grid-template-columns: 1fr; } }
+
+    .tariff-card {
+      background: var(--bg2);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+    }
+
+    .tariff-card.featured { border-color: var(--accent); }
+
+    .tariff-head {
+      padding: 28px 28px 22px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .tariff-head-top {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      margin-bottom: 8px;
+    }
+
+    .tariff-badge {
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      background: rgba(232,161,0,0.12);
+      color: var(--accent);
+      border-radius: 4px;
+      padding: 3px 9px;
+    }
+
+    .tariff-badge.truck { background: rgba(45,184,122,0.12); color: var(--green); }
+
+    .tariff-name { font-size: 1.3rem; font-weight: 700; margin: 8px 0 4px; }
+    .tariff-scope { color: var(--muted); font-size: 0.88rem; }
+
+    .tariff-price-row {
+      display: flex;
+      align-items: baseline;
+      gap: 6px;
+      margin-top: 18px;
+    }
+
+    .tariff-price-val { font-size: 2rem; font-weight: 800; color: var(--accent); }
+    .tariff-price-period { color: var(--muted); font-size: 0.88rem; }
+
+    .tariff-body { padding: 24px 28px; }
+
+    .price-table { width: 100%; border-collapse: collapse; margin-bottom: 20px; }
+    .price-table th {
+      font-size: 0.78rem;
+      color: var(--muted);
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      text-align: left;
+      padding-bottom: 10px;
+      border-bottom: 1px solid var(--border);
+    }
+    .price-table th:last-child { text-align: right; }
+    .price-table td {
+      padding: 9px 0;
+      font-size: 0.9rem;
+      border-bottom: 1px solid rgba(37,42,56,0.6);
+    }
+    .price-table td:last-child {
+      text-align: right;
+      font-weight: 700;
+      color: var(--accent);
+      white-space: nowrap;
+    }
+    .price-table tr:last-child td { border-bottom: none; }
+
+    .tariff-options {
+      background: var(--bg3);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 14px 16px;
+      font-size: 0.84rem;
+      color: var(--muted);
+      margin-bottom: 20px;
+    }
+
+    .tariff-options strong { color: var(--text); display: block; margin-bottom: 4px; font-size: 0.88rem; }
+
+    .tariff-notice {
+      font-size: 0.8rem;
+      color: var(--muted);
+      background: rgba(232,161,0,0.05);
+      border-left: 2px solid var(--accent);
+      padding: 8px 12px;
+      border-radius: 0 6px 6px 0;
+      margin-bottom: 20px;
+    }
+
+    .tariff-cta { display: block; width: 100%; text-align: center; padding: 14px; }
+
+    /* ============================
+       BENEFITS
+    ============================ */
+    #benefits { background: var(--bg2); border-top: 1px solid var(--border); }
+
+    .benefits-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 16px;
+    }
+
+    .benefit-item {
+      background: var(--bg3);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 20px;
+      display: flex;
+      gap: 14px;
+      align-items: flex-start;
+    }
+
+    .benefit-icon {
+      font-size: 1.3rem;
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+
+    .benefit-item h3 { font-size: 0.95rem; margin-bottom: 4px; }
+    .benefit-item p { color: var(--muted); font-size: 0.84rem; }
+
+    .benefits-cta-banner {
+      margin-top: 40px;
+      background: linear-gradient(135deg, rgba(232,161,0,0.08) 0%, rgba(232,161,0,0.02) 100%);
+      border: 1px solid rgba(232,161,0,0.25);
+      border-radius: var(--radius-lg);
+      padding: 32px;
+      text-align: center;
+    }
+
+    .benefits-cta-banner h3 { font-size: 1.3rem; margin-bottom: 10px; }
+    .benefits-cta-banner p { color: var(--muted); max-width: 540px; margin: 0 auto 24px; font-size: 0.95rem; }
+
+    /* ============================
+       FOR WHOM
+    ============================ */
+    #for-whom { background: var(--bg); }
+
+    .for-whom-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+    }
+
+    @media (max-width: 720px) { .for-whom-grid { grid-template-columns: 1fr; } }
+
+    .for-whom-card {
+      background: var(--bg2);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 28px;
+    }
+
+    .for-whom-tag {
+      display: inline-block;
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      border-radius: 4px;
+      padding: 3px 9px;
+      margin-bottom: 14px;
+    }
+
+    .tag-multi { background: rgba(232,161,0,0.12); color: var(--accent); }
+    .tag-truck { background: rgba(45,184,122,0.12); color: var(--green); }
+
+    .for-whom-card h3 { font-size: 1.1rem; margin-bottom: 16px; }
+
+    .for-whom-list { list-style: none; display: flex; flex-direction: column; gap: 10px; }
+    .for-whom-list li {
+      display: flex;
+      gap: 10px;
+      align-items: flex-start;
+      font-size: 0.9rem;
+      color: var(--muted);
+    }
+    .for-whom-list li::before {
+      content: '→';
+      color: var(--accent);
+      font-weight: 700;
+      flex-shrink: 0;
+      margin-top: 1px;
+    }
+
+    /* ============================
+       HOW IT WORKS
+    ============================ */
+    #how-it-works { background: var(--bg2); border-top: 1px solid var(--border); }
+
+    .steps { display: flex; flex-direction: column; gap: 0; max-width: 640px; }
+
+    .step {
+      display: flex;
+      gap: 24px;
+      align-items: flex-start;
+      position: relative;
+    }
+
+    .step:not(:last-child)::after {
+      content: '';
+      position: absolute;
+      left: 19px;
+      top: 48px;
+      bottom: -24px;
+      width: 2px;
+      background: var(--border);
+    }
+
+    .step-num {
+      width: 40px; height: 40px;
+      border-radius: 50%;
+      background: var(--accent);
+      color: #000;
+      font-weight: 800;
+      font-size: 0.95rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      position: relative;
+      z-index: 1;
+    }
+
+    .step-body { padding-bottom: 40px; }
+    .step-body h3 { margin-bottom: 6px; }
+    .step-body p { color: var(--muted); font-size: 0.9rem; }
+
+    /* ============================
+       NEWBIE
+    ============================ */
+    #newbie { background: var(--bg); }
+
+    .newbie-inner {
+      background: var(--bg2);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 44px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+      align-items: center;
+    }
+
+    @media (max-width: 720px) {
+      .newbie-inner { grid-template-columns: 1fr; padding: 28px; }
+    }
+
+    .newbie-list { display: flex; flex-direction: column; gap: 14px; margin-top: 22px; }
+
+    .newbie-item {
+      display: flex;
+      gap: 14px;
+      align-items: flex-start;
+    }
+
+    .newbie-item-num {
+      width: 28px; height: 28px;
+      border-radius: 6px;
+      background: rgba(232,161,0,0.12);
+      color: var(--accent);
+      font-size: 0.8rem;
+      font-weight: 700;
+      display: flex; align-items: center; justify-content: center;
+      flex-shrink: 0;
+    }
+
+    .newbie-item p { font-size: 0.9rem; color: var(--muted); }
+    .newbie-item strong { color: var(--text); display: block; margin-bottom: 2px; font-size: 0.92rem; }
+
+    .newbie-highlight {
+      background: var(--bg3);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 24px;
+    }
+
+    .newbie-highlight .nh-val { font-size: 2rem; font-weight: 800; color: var(--accent); }
+    .newbie-highlight .nh-label { color: var(--muted); font-size: 0.85rem; margin-bottom: 20px; }
+
+    .nh-separator { height: 1px; background: var(--border); margin: 16px 0; }
+
+    .nh-row {
+      display: flex;
+      justify-content: space-between;
+      font-size: 0.88rem;
+      padding: 6px 0;
+    }
+    .nh-row span:first-child { color: var(--muted); }
+    .nh-row span:last-child { font-weight: 600; color: var(--green); }
+
+    /* ============================
+       FAQ
+    ============================ */
+    #faq { background: var(--bg2); border-top: 1px solid var(--border); }
+
+    .faq-list { max-width: 740px; display: flex; flex-direction: column; gap: 10px; }
+
+    details {
+      background: var(--bg3);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      overflow: hidden;
+    }
+
+    details[open] { border-color: rgba(232,161,0,0.3); }
+
+    summary {
+      padding: 18px 20px;
+      font-weight: 600;
+      font-size: 0.95rem;
+      cursor: pointer;
+      list-style: none;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+    }
+
+    summary::-webkit-details-marker { display: none; }
+
+    summary::after {
+      content: '+';
+      font-size: 1.3rem;
+      color: var(--accent);
+      flex-shrink: 0;
+      line-height: 1;
+      transition: transform 0.2s;
+    }
+
+    details[open] summary::after { content: '−'; }
+
+    .faq-answer {
+      padding: 0 20px 18px;
+      color: var(--muted);
+      font-size: 0.9rem;
+      line-height: 1.7;
+    }
+
+    /* ============================
+       FINAL CTA
+    ============================ */
+    #final-cta {
+      background: var(--bg);
+      padding: var(--section-gap) 0;
+      border-top: 1px solid var(--border);
+    }
+
+    .final-cta-inner {
+      text-align: center;
+      max-width: 680px;
+      margin: 0 auto;
+    }
+
+    .final-pillars {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      justify-content: center;
+      margin: 28px 0;
+    }
+
+    .pillar {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      background: var(--bg2);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 10px 16px;
+      font-size: 0.88rem;
+      font-weight: 600;
+    }
+
+    .pillar::before {
+      content: '✓';
+      color: var(--green);
+      font-weight: 800;
+    }
+
+    .final-cta-inner .btn-group { justify-content: center; margin-top: 28px; }
+
+    .final-note {
+      margin-top: 20px;
+      color: var(--muted);
+      font-size: 0.82rem;
+    }
+
+    /* ============================
+       FOOTER
+    ============================ */
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 28px 0;
+      background: var(--bg2);
+    }
+
+    .footer-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .footer-inner p { color: var(--muted); font-size: 0.82rem; }
+
+    /* ============================
+       SCROLLBAR
+    ============================ */
+    ::-webkit-scrollbar { width: 6px; }
+    ::-webkit-scrollbar-track { background: var(--bg); }
+    ::-webkit-scrollbar-thumb { background: var(--border); border-radius: 3px; }
+  </style>
+</head>
+<body>
+
+<!-- ============================================================
+     HEADER
+============================================================ -->
+<header>
+  <nav class="nav">
+    <span class="nav-logo">ETC<span>.</span>CHIP</span>
+    <div class="nav-links">
+      <a href="#tariffs">Тарифы</a>
+      <a href="#benefits">Выгоды</a>
+      <a href="#how-it-works">Как работает</a>
+      <a href="#faq">FAQ</a>
+    </div>
+    <a href="#final-cta" class="btn btn-primary" style="padding:10px 20px;font-size:0.88rem;">Подключиться</a>
+  </nav>
+</header>
+
+<!-- ============================================================
+     HERO
+============================================================ -->
+<section id="hero">
+  <div class="container">
+    <div class="hero-inner">
+      <div>
+        <div class="hero-badge">Годовой тариф · 2 варианта</div>
+        <h1>Фиксированные цены на прошивки.<br><em>Приоритет в работе.</em><br>Поддержка без «пинг-понга».</h1>
+        <p class="hero-sub">Для чиптюнеров и автосервисов, которые хотят стабильные сроки, понятную экономику и профессиональное сопровождение.</p>
+        <div class="btn-group">
+          <a href="#final-cta" class="btn btn-primary">Подключиться к тарифу</a>
+          <a href="#tariffs" class="btn btn-outline">Узнать условия</a>
+        </div>
+        <div class="hero-stats">
+          <div>
+            <div class="hero-stat-val">от 2500 ₽</div>
+            <div class="hero-stat-label">за любую прошивку<br>по тарифу</div>
+          </div>
+          <div>
+            <div class="hero-stat-val">8:00–20:00</div>
+            <div class="hero-stat-label">техподдержка<br>по МСК</div>
+          </div>
+          <div>
+            <div class="hero-stat-val">10%</div>
+            <div class="hero-stat-label">бонусов<br>с каждого заказа</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="hero-card">
+          <div class="hero-card-icon">⚡</div>
+          <div class="hero-card-text">
+            <strong>Приоритет в очереди</strong>
+            <span>Ваши заявки обрабатываются в первую очередь</span>
+          </div>
+        </div>
+        <div class="hero-card">
+          <div class="hero-card-icon">🎓</div>
+          <div class="hero-card-text">
+            <strong>Бесплатное обучение</strong>
+            <span>Экономия 25 000 ₽ — включено в тариф</span>
+          </div>
+        </div>
+        <div class="hero-card">
+          <div class="hero-card-icon">📊</div>
+          <div class="hero-card-text">
+            <strong>Прогнозируемая маржа</strong>
+            <span>Фиксированные цены → понятная экономика</span>
+          </div>
+        </div>
+        <div class="hero-card">
+          <div class="hero-card-icon">🔧</div>
+          <div class="hero-card-text">
+            <strong>Помощь с оборудованием</strong>
+            <span>Подбор, настройка, сопровождение</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     PROBLEMS
+============================================================ -->
+<section id="problems">
+  <div class="container">
+    <div class="section-label">Проблемы рынка</div>
+    <div class="section-title">
+      <h2>Почему работать без тарифа неудобно и невыгодно</h2>
+      <p>Разовые заявки — хаотичные цены, непредсказуемые сроки и отсутствие поддержки. Это мешает масштабировать бизнес.</p>
+    </div>
+
+    <div class="problems-grid">
+      <div class="problem-card">
+        <h3>Цена от настроения</h3>
+        <p>Каждый файл стоит по-разному. Невозможно выстроить ценообразование для клиента.</p>
+      </div>
+      <div class="problem-card">
+        <h3>Ожидание ответа</h3>
+        <p>Без приоритета вы стоите в общей очереди. Клиент ждёт — репутация страдает.</p>
+      </div>
+      <div class="problem-card">
+        <h3>Нестабильные сроки</h3>
+        <p>Срок выполнения непредсказуем. Сложно обещать клиенту конкретное время.</p>
+      </div>
+      <div class="problem-card">
+        <h3>Нет поддержки</h3>
+        <p>Технические вопросы — некому задать. Решаете проблемы самостоятельно или теряете заказ.</p>
+      </div>
+      <div class="problem-card">
+        <h3>Зависимость от калибровщика</h3>
+        <p>Один исполнитель — риск. Если он недоступен, вы теряете деньги и клиентов.</p>
+      </div>
+      <div class="problem-card">
+        <h3>Отсутствие развития</h3>
+        <p>Нет обучения, нет инструментов роста. Работаете в режиме «выживания», не масштабирования.</p>
+      </div>
+    </div>
+
+    <div class="problems-cta">
+      <div>
+        <strong>Тарифная модель решает всё перечисленное</strong>
+        <p>Фиксированная цена, приоритет, поддержка 8–20 МСК, обучение и бонусная программа — всё включено в одну годовую подписку.</p>
+      </div>
+      <a href="#tariffs" class="btn btn-primary">Посмотреть тарифы</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     TARIFFS
+============================================================ -->
+<section id="tariffs">
+  <div class="container">
+    <div class="section-label">Тарифы</div>
+    <div class="section-title">
+      <h2>Два тарифа — под любой профиль работы</h2>
+      <p>Выберите тариф в зависимости от специализации. Оба включают полный набор преимуществ клуба.</p>
+    </div>
+
+    <div class="tariffs-grid">
+
+      <!-- МУЛЬТИМАРОЧНЫЙ -->
+      <div class="tariff-card featured">
+        <div class="tariff-head">
+          <div class="tariff-head-top">
+            <span class="tariff-badge">Мультимарочный</span>
+          </div>
+          <div class="tariff-name">Мультимарочный</div>
+          <div class="tariff-scope">Легковые и коммерческие авто (кроме грузовых)</div>
+          <div class="tariff-price-row">
+            <span class="tariff-price-val">Фиксированные</span>
+            <span class="tariff-price-period">цены на год</span>
+          </div>
+        </div>
+        <div class="tariff-body">
+          <table class="price-table">
+            <thead>
+              <tr>
+                <th>Услуга</th>
+                <th>Цена</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Stage 1</td>
+                <td>2 500 ₽</td>
+              </tr>
+              <tr>
+                <td>Отключение экологии</td>
+                <td>2 500 ₽</td>
+              </tr>
+              <tr>
+                <td>Stage 1 + Экология</td>
+                <td>3 000 ₽</td>
+              </tr>
+              <tr>
+                <td>SCR / AdBlue OFF</td>
+                <td>5 000 ₽</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <div class="tariff-options">
+            <strong>Дополнительные опции (при наличии решения)</strong>
+            TVA, EFR, MAF, IMMO, DTC OFF, Sport приборы BMW, Speed Limit OFF, Launch Control и другие активации.
+          </div>
+
+          <div class="tariff-notice">
+            Все опции добавляются только при технической возможности и корректной вычитке файла.
+          </div>
+
+          <div style="margin-bottom:16px;">
+            <div style="font-size:0.88rem;color:var(--muted);margin-bottom:8px;">Скидка на готовые решения:</div>
+            <div style="font-size:1.1rem;font-weight:700;color:var(--accent);">−10% на весь каталог</div>
+          </div>
+
+          <a href="#final-cta" class="btn btn-primary tariff-cta">Подключить тариф</a>
+        </div>
+      </div>
+
+      <!-- ГРУЗОВОЙ -->
+      <div class="tariff-card">
+        <div class="tariff-head">
+          <div class="tariff-head-top">
+            <span class="tariff-badge truck">Грузовой</span>
+          </div>
+          <div class="tariff-name">Грузовой</div>
+          <div class="tariff-scope">Грузовые автомобили и коммерческий транспорт</div>
+          <div class="tariff-price-row">
+            <span class="tariff-price-val">Фиксированные</span>
+            <span class="tariff-price-period">цены на год</span>
+          </div>
+        </div>
+        <div class="tariff-body">
+          <table class="price-table">
+            <thead>
+              <tr>
+                <th>Услуга</th>
+                <th>Цена</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Увеличение мощности</td>
+                <td>3 000 ₽</td>
+              </tr>
+              <tr>
+                <td>Отключение экологии</td>
+                <td>3 000 ₽</td>
+              </tr>
+              <tr>
+                <td>Мощность + Экология</td>
+                <td>3 500 ₽</td>
+              </tr>
+              <tr>
+                <td>SCR / AdBlue OFF</td>
+                <td>5 000 ₽</td>
+              </tr>
+              <tr>
+                <td>Мощность + SCR OFF</td>
+                <td>5 000 ₽</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <div class="tariff-options">
+            <strong>Дополнительные отключения и активации</strong>
+            EGR OFF, DPF OFF, SCR/AdBlue OFF, DTC OFF и другие опции при наличии технического решения.
+          </div>
+
+          <div class="tariff-notice">
+            Все опции добавляются только при технической возможности и корректной вычитке файла.
+          </div>
+
+          <div style="margin-bottom:16px;">
+            <div style="font-size:0.88rem;color:var(--muted);margin-bottom:8px;">Скидка на готовые решения:</div>
+            <div style="font-size:1.1rem;font-weight:700;color:var(--green);">−20% на весь каталог</div>
+          </div>
+
+          <a href="#final-cta" class="btn btn-primary tariff-cta" style="background:var(--green);">Подключить тариф</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     BENEFITS
+============================================================ -->
+<section id="benefits">
+  <div class="container">
+    <div class="section-label">Что входит в тариф</div>
+    <div class="section-title">
+      <h2>Вы получаете не просто цену —<br>вы получаете инфраструктуру для роста бизнеса</h2>
+    </div>
+
+    <div class="benefits-grid">
+      <div class="benefit-item">
+        <div class="benefit-icon">🎓</div>
+        <div>
+          <h3>Бесплатное обучение</h3>
+          <p>Полный курс по чип-тюнингу включён в тариф. Экономия — 25 000 ₽.</p>
+        </div>
+      </div>
+      <div class="benefit-item">
+        <div class="benefit-icon">🤝</div>
+        <div>
+          <h3>3 месяца сопровождения</h3>
+          <p>Для тех, кто только входит в нишу: поддержка на каждом шаге старта.</p>
+        </div>
+      </div>
+      <div class="benefit-item">
+        <div class="benefit-icon">🔩</div>
+        <div>
+          <h3>Помощь с оборудованием</h3>
+          <p>Подберём и поможем настроить необходимое оборудование под вашу специализацию.</p>
+        </div>
+      </div>
+      <div class="benefit-item">
+        <div class="benefit-icon">📞</div>
+        <div>
+          <h3>Техподдержка 8:00–20:00 МСК</h3>
+          <p>Технические вопросы решаются в рабочее время. Без очереди, без ожиданий.</p>
+        </div>
+      </div>
+      <div class="benefit-item">
+        <div class="benefit-icon">⚡</div>
+        <div>
+          <h3>Приоритет в очереди</h3>
+          <p>Ваши заявки идут первыми. Клиенты получают результат быстрее — вы зарабатываете больше.</p>
+        </div>
+      </div>
+      <div class="benefit-item">
+        <div class="benefit-icon">💰</div>
+        <div>
+          <h3>10% бонусов с каждого заказа</h3>
+          <p>Накапливаются и применяются на оплату товаров — до 100% стоимости.</p>
+        </div>
+      </div>
+      <div class="benefit-item">
+        <div class="benefit-icon">🏷️</div>
+        <div>
+          <h3>Скидка на готовые решения</h3>
+          <p>10% по мультимарочному тарифу, 20% по грузовому. Действует весь год.</p>
+        </div>
+      </div>
+      <div class="benefit-item">
+        <div class="benefit-icon">💾</div>
+        <div>
+          <h3>Доступ к HELP PCM Flasher</h3>
+          <p>Бесплатный доступ к базе распиновок и обучающим материалам платформы.</p>
+        </div>
+      </div>
+      <div class="benefit-item">
+        <div class="benefit-icon">📣</div>
+        <div>
+          <h3>Помощь с рекламой</h3>
+          <p>Помогаем настроить рекламу для вашего автосервиса и привлечь новых клиентов.</p>
+        </div>
+      </div>
+      <div class="benefit-item">
+        <div class="benefit-icon">🗺️</div>
+        <div>
+          <h3>Размещение в разделе «Партнёры»</h3>
+          <p>Ваш сервис в базе партнёров ETC Chip — дополнительный канал входящих заявок.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="benefits-cta-banner">
+      <h3>Всё это — в одном годовом тарифе</h3>
+      <p>Стабильная цена, инструменты роста, поддержка. Фокусируйтесь на работе — мы обеспечиваем инфраструктуру.</p>
+      <div class="btn-group" style="justify-content:center;">
+        <a href="#final-cta" class="btn btn-primary">Подключиться к тарифу</a>
+        <a href="#tariffs" class="btn btn-outline">Сравнить тарифы</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     FOR WHOM
+============================================================ -->
+<section id="for-whom">
+  <div class="container">
+    <div class="section-label">Для кого</div>
+    <div class="section-title">
+      <h2>Кому подходит каждый тариф</h2>
+    </div>
+
+    <div class="for-whom-grid">
+      <div class="for-whom-card">
+        <span class="for-whom-tag tag-multi">Мультимарочный</span>
+        <h3>Работаете с легковыми и коммерческими авто</h3>
+        <ul class="for-whom-list">
+          <li>Автосервисы с постоянным потоком заказов</li>
+          <li>Мастера, работающие с разными марками</li>
+          <li>Специалисты, которым важна маржинальность</li>
+          <li>Чиптюнеры, ищущие стабильного партнёра</li>
+          <li>Автоэлектрики с регулярными заявками</li>
+        </ul>
+      </div>
+      <div class="for-whom-card">
+        <span class="for-whom-tag tag-truck">Грузовой</span>
+        <h3>Специализируетесь на грузовом транспорте</h3>
+        <ul class="for-whom-list">
+          <li>Чиптюнеры по грузовикам и спецтехнике</li>
+          <li>Сервисы коммерческого транспорта</li>
+          <li>Компании с собственными автопарками</li>
+          <li>Специалисты по SCR/AdBlue системам</li>
+          <li>Мастера с регулярными заказами по грузовым</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     HOW IT WORKS
+============================================================ -->
+<section id="how-it-works">
+  <div class="container">
+    <div class="section-label">Как это работает</div>
+    <div class="section-title">
+      <h2>Три шага до старта работы по тарифу</h2>
+    </div>
+
+    <div class="steps">
+      <div class="step">
+        <div class="step-num">1</div>
+        <div class="step-body">
+          <h3>Оплата тарифа</h3>
+          <p>Выбираете подходящий тариф (мультимарочный или грузовой) и производите оплату. Тариф активируется на 12 месяцев.</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">2</div>
+        <div class="step-body">
+          <h3>Подключение и выдача доступов</h3>
+          <p>Получаете доступ к личному кабинету, базе знаний, HELP PCM Flasher и вас добавляют в базу партнёров. При необходимости — вводный инструктаж.</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">3</div>
+        <div class="step-body">
+          <h3>Работа по фиксированным условиям</h3>
+          <p>Отправляете заявки по зафиксированным ценам, получаете приоритетную обработку, поддержку и начисление бонусов с каждого заказа.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     NEWBIE
+============================================================ -->
+<section id="newbie">
+  <div class="container">
+    <div class="newbie-inner">
+      <div>
+        <div class="section-label">Для новичков</div>
+        <h2>Только входите в нишу чип-тюнинга?</h2>
+        <p style="color:var(--muted);margin-top:10px;font-size:0.95rem;">Тариф включает всё необходимое для уверенного старта — без лишних затрат и потерянного времени.</p>
+
+        <div class="newbie-list">
+          <div class="newbie-item">
+            <div class="newbie-item-num">1</div>
+            <div>
+              <strong>Обучение включено</strong>
+              <p>Полный курс в рамках тарифа. Экономите 25 000 ₽ на старте.</p>
+            </div>
+          </div>
+          <div class="newbie-item">
+            <div class="newbie-item-num">2</div>
+            <div>
+              <strong>Помощь с оборудованием</strong>
+              <p>Подберём оптимальный набор инструментов под ваш бюджет и задачи.</p>
+            </div>
+          </div>
+          <div class="newbie-item">
+            <div class="newbie-item-num">3</div>
+            <div>
+              <strong>3 месяца сопровождения</strong>
+              <p>Индивидуальная поддержка на начальном этапе — по технике и бизнесу.</p>
+            </div>
+          </div>
+          <div class="newbie-item">
+            <div class="newbie-item-num">4</div>
+            <div>
+              <strong>Помощь с рекламой</strong>
+              <p>Настроим рекламу вашего сервиса, чтобы первые клиенты появились быстрее.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="newbie-highlight">
+        <div class="nh-val">25 000 ₽</div>
+        <div class="nh-label">Экономия на обучении</div>
+        <div class="nh-separator"></div>
+        <div class="nh-row">
+          <span>Курс по чип-тюнингу</span>
+          <span>включён</span>
+        </div>
+        <div class="nh-row">
+          <span>Подбор оборудования</span>
+          <span>включён</span>
+        </div>
+        <div class="nh-row">
+          <span>3 мес. сопровождения</span>
+          <span>включено</span>
+        </div>
+        <div class="nh-row">
+          <span>Настройка рекламы</span>
+          <span>включено</span>
+        </div>
+        <div class="nh-separator"></div>
+        <a href="#final-cta" class="btn btn-primary" style="display:block;text-align:center;margin-top:16px;">Начать с тарифа</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     FAQ
+============================================================ -->
+<section id="faq">
+  <div class="container">
+    <div class="section-label">FAQ</div>
+    <div class="section-title">
+      <h2>Частые вопросы</h2>
+    </div>
+
+    <div class="faq-list">
+      <details>
+        <summary>Подходит ли тариф под мою технику?</summary>
+        <div class="faq-answer">
+          Мультимарочный тариф охватывает легковые автомобили и коммерческий транспорт (кроме грузовых). Грузовой тариф — грузовые автомобили, тягачи и спецтехнику. Если вы работаете с обоими направлениями — можно подключить оба тарифа. Уточните у менеджера перед оплатой.
+        </div>
+      </details>
+
+      <details>
+        <summary>Что если решения для конкретного автомобиля нет?</summary>
+        <div class="faq-answer">
+          Если готового решения нет — сообщаем об этом честно и сразу. Не берём деньги за несуществующий файл. В ряде случаев возможна разработка решения под заказ — сроки и стоимость согласовываются отдельно.
+        </div>
+      </details>
+
+      <details>
+        <summary>Как начисляются бонусы?</summary>
+        <div class="faq-answer">
+          10% от суммы каждого выполненного заказа автоматически зачисляются на бонусный счёт. Бонусами можно оплачивать товары из каталога — до 100% стоимости. Бонусы не сгорают в течение действия тарифа.
+        </div>
+      </details>
+
+      <details>
+        <summary>Можно ли перейти с одного тарифа на другой?</summary>
+        <div class="faq-answer">
+          Да. При необходимости переход возможен — уточните актуальные условия у менеджера. Если ваша работа охватывает оба направления, рекомендуем рассмотреть подключение обоих тарифов.
+        </div>
+      </details>
+
+      <details>
+        <summary>Какие гарантии качества прошивок?</summary>
+        <div class="faq-answer">
+          Работаем только с проверенными файлами. Каждая прошивка проходит контроль перед отправкой. Если после прошивки выявляется некорректная работа — разбираемся и исправляем в рамках поддержки. Дополнительные опции добавляются исключительно при наличии корректного решения и качественной вычитки.
+        </div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     FINAL CTA
+============================================================ -->
+<section id="final-cta">
+  <div class="container">
+    <div class="final-cta-inner">
+      <div class="section-label" style="display:inline-block;">Подключение</div>
+      <h2 style="margin-top:12px;">Стабильность начинается с фиксированных условий</h2>
+      <p style="color:var(--muted);margin-top:10px;font-size:1rem;">Выберите тариф — и начните работать по понятным правилам уже сейчас.</p>
+
+      <div class="final-pillars">
+        <div class="pillar">Фиксированная цена</div>
+        <div class="pillar">Прогнозируемая прибыль</div>
+        <div class="pillar">Приоритет в очереди</div>
+        <div class="pillar">Поддержка 8–20 МСК</div>
+        <div class="pillar">Бонусная программа</div>
+        <div class="pillar">Обучение включено</div>
+      </div>
+
+      <div class="btn-group">
+        <a href="https://etc-chip.ru/tariph-multimarochnyj-12-mesjacev12.html" class="btn btn-primary" target="_blank" rel="noopener">Подключиться к тарифу</a>
+        <a href="https://etc-chip.ru" class="btn btn-outline" target="_blank" rel="noopener">Задать вопрос перед оплатой</a>
+      </div>
+
+      <p class="final-note">Для подключения — перейдите по ссылке или свяжитесь с менеджером. Тариф активируется в течение 1 рабочего дня.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     FOOTER
+============================================================ -->
+<footer>
+  <div class="container">
+    <div class="footer-inner">
+      <span class="nav-logo" style="font-size:1rem;">ETC<span style="color:var(--accent);">.</span>CHIP</span>
+      <p>Клуб профессионального чип-тюнинга · <a href="https://etc-chip.ru" target="_blank" rel="noopener">etc-chip.ru</a></p>
+      <p>© 2025 ETC Chip. Все права защищены.</p>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
