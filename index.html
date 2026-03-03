@@ -113,13 +113,11 @@
       margin: 0 auto;
     }
 
-    .nav-logo {
-      font-size: 1.1rem;
-      font-weight: 800;
-      letter-spacing: 0.04em;
-      color: var(--text);
+    .nav-logo img {
+      height: 44px;
+      width: auto;
+      display: block;
     }
-    .nav-logo span { color: var(--accent); }
 
     .nav-links { display: flex; gap: 24px; }
     .nav-links a { color: var(--muted); font-size: 0.9rem; transition: color 0.15s; }
@@ -1067,7 +1065,7 @@
 ============================================================ -->
 <header>
   <nav class="nav">
-    <span class="nav-logo">ETC<span>.</span>CHIP</span>
+    <a href="#hero" class="nav-logo"><img src="logo.png" alt="ETC — Expert Tun Club" /></a>
     <div class="nav-links">
       <a href="#tariffs">Тарифы</a>
       <a href="#calculator">Калькулятор</a>
@@ -1086,6 +1084,7 @@
   <div class="container">
     <div class="hero-inner">
       <div>
+        <img src="logo.png" alt="ETC Expert Tun Club" style="height:72px;width:auto;margin-bottom:20px;" />
         <div class="hero-badge">Годовой тариф · 2 варианта</div>
         <h1>Фиксированные цены на прошивки.<br><em>Приоритет в работе.</em><br>Поддержка без «пинг-понга».</h1>
         <p class="hero-sub">Для чиптюнеров и автосервисов, которые хотят стабильные сроки, понятную экономику и профессиональное сопровождение.</p>
@@ -1865,7 +1864,7 @@
 <footer>
   <div class="container">
     <div class="footer-inner">
-      <span class="nav-logo" style="font-size:1rem;">ETC<span style="color:var(--accent);">.</span>CHIP</span>
+      <a href="#hero" class="nav-logo"><img src="logo.png" alt="ETC — Expert Tun Club" style="height:36px;" /></a>
       <p>Клуб профессионального чип-тюнинга · <a href="https://etc-chip.ru" target="_blank" rel="noopener">etc-chip.ru</a></p>
       <p>© 2025 ETC Chip. Все права защищены.</p>
     </div>
