@@ -1035,6 +1035,30 @@
     ::-webkit-scrollbar { width: 6px; }
     ::-webkit-scrollbar-track { background: var(--bg); }
     ::-webkit-scrollbar-thumb { background: var(--border); border-radius: 3px; }
+
+    /* ABOUT */
+    .about-intro { background: var(--bg2); border: 1px solid var(--border); border-radius: var(--radius-lg); padding: 28px 32px; margin-bottom: 20px; font-size: 15px; color: var(--muted); line-height: 1.75; display: flex; flex-direction: column; gap: 14px; }
+    .about-intro p { color: var(--muted); }
+    .about-accent { background: rgba(232,161,0,0.07); border-left: 3px solid var(--accent); border-radius: 0 var(--radius) var(--radius) 0; padding: 14px 18px; color: var(--text); font-weight: 600; font-size: 14px; line-height: 1.6; }
+    .about-grid { display: grid; gap: 16px; margin-bottom: 16px; }
+    @media (min-width: 860px) { .about-grid { grid-template-columns: 1fr 1fr; } }
+    .about-col { display: flex; flex-direction: column; gap: 16px; }
+    .about-card { background: var(--bg2); border: 1px solid var(--border); border-radius: var(--radius-lg); padding: 24px; }
+    .about-card h3 { color: var(--accent); margin-bottom: 16px; font-size: 1rem; }
+    .about-steps { display: flex; flex-direction: column; gap: 12px; margin-bottom: 16px; }
+    .about-step { display: flex; gap: 12px; align-items: flex-start; font-size: 14px; color: var(--muted); line-height: 1.55; }
+    .about-step-n { width: 30px; height: 30px; border: 2px solid var(--accent); background: rgba(232,161,0,0.08); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 11px; font-weight: 800; color: var(--accent); flex-shrink: 0; margin-top: 1px; }
+    .about-qnote { background: rgba(232,161,0,0.07); border: 1px solid rgba(232,161,0,0.2); border-radius: var(--radius); padding: 12px 14px; font-size: 13px; color: var(--muted); line-height: 1.6; }
+    .about-list { list-style: none; display: flex; flex-direction: column; gap: 9px; }
+    .about-list li { display: flex; gap: 9px; font-size: 14px; color: var(--muted); align-items: flex-start; line-height: 1.5; }
+    .about-list li::before { content: '—'; color: var(--accent); font-weight: 700; flex-shrink: 0; }
+    .about-edu { background: rgba(232,161,0,0.06); border: 1px solid rgba(232,161,0,0.2); border-radius: var(--radius-lg); padding: 28px 32px; margin-bottom: 16px; }
+    .about-edu h3 { color: var(--accent); margin-bottom: 10px; }
+    .about-edu > p { font-size: 14px; color: var(--muted); margin-bottom: 18px; line-height: 1.7; }
+    .about-edu-tags { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 14px; }
+    .about-edu-tags span { background: rgba(232,161,0,0.08); border: 1px solid rgba(232,161,0,0.25); border-radius: 100px; padding: 5px 14px; font-size: 13px; color: var(--accent); font-weight: 600; }
+    .about-edu-note { font-size: 14px; color: var(--text); font-style: italic; line-height: 1.6; }
+    .about-close { background: var(--bg2); border: 1px solid var(--border); border-left: 3px solid var(--accent); border-radius: 0 var(--radius-lg) var(--radius-lg) 0; padding: 20px 24px; font-size: 15px; color: var(--muted); line-height: 1.7; }
   </style>
 </head>
 <body>
@@ -1139,6 +1163,73 @@
         </div>
       </div>
     </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     ABOUT
+============================================================ -->
+<section id="about">
+  <div class="container">
+    <div class="section-label">О нас</div>
+    <div class="section-title">
+      <h2>Кто мы и почему нам доверяют</h2>
+      <p>Команда профессиональных калибровщиков прошивок с опытом более 10 лет</p>
+    </div>
+
+    <div class="about-intro">
+      <p>Мы — команда профессиональных калибровщиков прошивок для чип-тюнинга легковых и грузовых автомобилей с опытом более 10 лет.</p>
+      <p>Наша специализация — точная калибровка под конкретный автомобиль и конкретную задачу: увеличение мощности, снижение расхода топлива, корректная работа после отключения EGR, DPF, SCR (AdBlue), устранение ошибок и нестабильной работы двигателя.</p>
+      <div class="about-accent">Мы не продаём «готовые универсальные файлы».<br>Каждая прошивка создаётся и проверяется индивидуально.</div>
+    </div>
+
+    <div class="about-grid">
+      <div class="about-card">
+        <h3>Как мы работаем</h3>
+        <div class="about-steps">
+          <div class="about-step"><div class="about-step-n">01</div><div>Вы вычитываете файл из ЭБУ</div></div>
+          <div class="about-step"><div class="about-step-n">02</div><div>Присылаете его с техническим заданием</div></div>
+          <div class="about-step"><div class="about-step-n">03</div><div>Мы анализируем, согласовываем стоимость и выполняем калибровку</div></div>
+          <div class="about-step"><div class="about-step-n">04</div><div>Вы получаете готовое решение с поддержкой</div></div>
+        </div>
+        <div class="about-qnote">Каждый файл проходит обязательный контроль качества. На все программные решения — бессрочная гарантия и техническая поддержка.</div>
+      </div>
+      <div class="about-col">
+        <div class="about-card">
+          <h3>Для кого мы работаем</h3>
+          <ul class="about-list">
+            <li>автоэлектрики и специалисты по чип-тюнингу</li>
+            <li>автосервисы</li>
+            <li>транспортные компании с собственным автопарком</li>
+            <li>начинающие специалисты, которые хотят работать профессионально</li>
+          </ul>
+        </div>
+        <div class="about-card">
+          <h3>Форматы сотрудничества</h3>
+          <ul class="about-list">
+            <li>разовые заказы</li>
+            <li>партнёрские тарифы для постоянных клиентов</li>
+            <li>специальные условия для сервисов и автопарков</li>
+            <li>долгосрочное сотрудничество с приоритетной обработкой файлов</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="about-edu">
+      <h3>Обучение</h3>
+      <p>Мы обучаем чип-тюнингу с нуля до практической работы с файлами. Формат — структурированные видеолекции + сопровождение.</p>
+      <div class="about-edu-tags">
+        <span>Принципы калибровки</span>
+        <span>Работа с картами</span>
+        <span>Отключение экологических систем</span>
+        <span>Подбор оборудования</span>
+        <span>Логика безопасной настройки</span>
+      </div>
+      <p class="about-edu-note">Наша задача — не просто «показать кнопки», а научить понимать процесс.</p>
+    </div>
+
+    <div class="about-close">Мы строим долгосрочные отношения. Если вам нужен стабильный результат, прогнозируемое качество и поддержка, а не эксперимент с автомобилем клиента — вы в правильном месте.</div>
   </div>
 </section>
 
